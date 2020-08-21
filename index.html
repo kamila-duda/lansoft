@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LanSoft</title>
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__title">Lan Soft</h1>
+      <span class="header__button--track"><button class="header__button">Jasny motyw</button></span>
+    </header>
+    <main class="container">
+      <nav class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__listItem">
+            <a class="sidebar__listLink" href="#home">Home</a>
+          </li>
+          <li class="sidebar__listItem">
+            <a class="sidebar__listLink" href="#aboutUs">O nas</a>
+          </li>
+          <li class="sidebar__listItem">
+            <a class="sidebar__listLink" href="#offer">Oferta</a>
+          </li>
+          <li class="sidebar__listItem">
+            <a class="sidebar__listLink" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+        <div class="sidebar__menu">Menu</div>
+        <div class="sidebar__scroll"></div>
+      </nav>
+      <div class="section__container" id="home">
+        <section class="section section--first">
+          <a class="section__link" href="#offer"
+            ><h2>Oferta</h2>
+            <span class="section__scroll"></span>
+            <p class="scroll__describe">Scroll</p>
+          </a>
+        </section>
+        <section class="section section--second" id="aboutUs">
+          <h2>O nas</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod non
+            corrupti libero, esse deleniti praesentium alias, error odio
+            consectetur nesciunt atque, id laborum at unde nisi. Quam hic alias.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+            cupiditate nesciunt incidunt, facere accusantium adipisci
+            voluptatibus nisi. Consectetur exercitationem nobis excepturi
+            perferendis, molestiae ipsa blanditiis assumenda repudiandae
+            necessitatibus nemo minus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+            laboriosam est minima error tempora ipsum magni! Blanditiis sint
+            aspernatur, magnam tempora et iusto omnis pariatur quisquam totam
+            ullam praesentium dolor!
+          </p>
+          <footer class="aboutUs__footer">
+            <div class="aboutUs__imageContainer">
+              <img
+                class="aboutUs__image"
+                src="images/marcin.jpg"
+                alt="Zdjęcie Marcina Sojdy"
+              />
+              <h3>Marcin Sojda</h3>
+            </div>
+            <div class="aboutUs__imageContainer">
+              <img
+                class="aboutUs__image"
+                src="images/lukasz.jpg"
+                alt="Zdjęcie Łukasza Sklarka"
+              />
+              <h3>Łukasz Sklarek</h3>
+            </div>
+          </footer>
+        </section>
+        <section class="section section--third" id="offer">
+          <h2>Oferta</h2>
+          <p>Zapewniamy:</p>
+          <ul class="offer__list">
+            <li>
+              Stały dostęp do internetu
+            </li>
+            <li>
+              Łącza symetryczne dla firm i klientów
+            </li>
+            <li>
+              Projektowanie i wykonanie certyfikowanych sieci komputerowych,
+              przewodowych, bezprzewodowych i światłowodowych
+            </li>
+            <li>
+              Oprogramowanie na zamówienie
+            </li>
+          </ul>
+          <p class="offer__describe">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod non
+            corrupti libero, esse deleniti praesentium alias, error odio
+            consectetur nesciunt atque, id laborum at unde nisi. Quam hic alias.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+            cupiditate nesciunt incidunt, facere accusantium adipisci
+            voluptatibus nisi. Consectetur exercitationem nobis excepturi
+            perferendis, molestiae ipsa blanditiis assumenda repudiandae
+            necessitatibus nemo minus.
+          </p>
+        </section>
+        <section class="section section--fourth" id="contact">
+          <h2>Kontakt</h2>
+          <div class="contact__contener">
+            <div class="contact__adress">
+              <p>Biuro Obsługi Klienta:</p>
+              <p>ul. Dekabrystów 33, paw. 23</p>
+              <p>42-200 Częstochowa</p>
+              <p>tel. 34 322 49 69</p>
+              <p>kom. 663 333 533</p>
+              <p>czynne od poniedziałku do piątku</p>
+              <p>w godzinach 9.00 - 17.00</p>
+            </div>
+            <iframe
+              class="contact__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.290373801423!2d19.11186191515345!3d50.82578517952888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710b42a7bc64be3%3A0x83246a54e328a488!2sDekabryst%C3%B3w%2033%2C%2042-218%20Cz%C4%99stochowa!5e0!3m2!1spl!2spl!4v1597998386403!5m2!1spl!2spl"
+              width="700"
+              height="350"
+              style="border:0;"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          
+          <form class="form">
+            <h3>Masz pytania? Napisz do nas!</h3>
+            <p class="form__row">
+                <a class="form__mail" href="mailto:lansoft@poczta.fm">lansoft@poczta.fm</a>
+            </p>
+            <p class="form__row">
+                Lub wypełnij poniższy formularz
+            </p>
+            <p class="form__row">
+              <label class="form__label" for="subject">Temat:</label>
+              <input
+                class="form__input"
+                id="name"
+                type="text"
+                placeholder="np. Zapytanie ofertowe"
+              />
+            </p>
+            <p class="form__row">
+              <label class="form__label form__label--textarea" for="text"
+                >Wpisz swoje pytanie:</label
+              >
+              <textarea
+                class="form__textarea"
+                id="text"
+                placeholder="Napisz coś..."
+                rows="3"
+              ></textarea>
+            </p>
+            <p class="form__row">
+              <label class="form__label" for="email">Podaj swój email: </label>
+              <input class="form__input" type="email" id="email" />
+            </p>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+            <ul class="footer__list">
+                <li class="footer__listItem">
+                  <a class="footer__listLink" href="#home">Home</a>
+                </li>
+                <li class="footer__listItem">
+                  <a class="footer__listLink" href="#aboutUs">O nas</a>
+                </li>
+                <li class="footer__listItem">
+                  <a class="footer__listLink" href="#offer">Oferta</a>
+                </li>
+                <li class="footer__listItem">
+                  <a class="footer__listLink" href="#contact">Kontakt</a>
+                </li>
+              </ul>
+      <p class="footer__autor">
+        <span>LanSoft 2020 ® Wszelkie prawa zastrzeżone</span><span>Projekt i wykonanie Kamila Duda</span>
+      </p>
+    </footer>
+  </body>
+</html>
