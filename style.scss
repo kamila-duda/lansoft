@@ -14,6 +14,7 @@ html {
   .body {
     font-family: 'Play', sans-serif;
     background-color: $dark-color;
+    background-size: cover;
     color: $light-color;
     margin: 0;
   }
@@ -109,8 +110,9 @@ html {
   }
   
   .section__container {
-    margin-left: 60px;
     transition: 2s;
+    max-width: 1000px;
+    margin-right: auto;
   }
   .section {
     font-size: 20px;
@@ -118,15 +120,19 @@ html {
     text-align: justify;
     padding: 50px 50px 10px;
   }
+  .section__header{
+      background-color: $decor-color;
+      border-radius: 15px;
+      padding: 15px;
+  }
   .section--first {
-    background-image: url('./images/banner-light.jpg'); /* Photo by Markus Spiske on Unsplash */
-    background-position: 10% 60%;
+    background-image: url("./images/background.jpg");
     background-size: 100%;
+    background-position: 50% 60%;
     height: 50vh;
     position: relative;
     margin: 90px 50px 10px;
     border-radius: 15px;
-    border: 2px solid $decor-color;
   }
   .section__link {
     color: $light-color;

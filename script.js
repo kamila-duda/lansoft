@@ -4,18 +4,36 @@
   const sectionContainer = document.querySelector('.section__container')
   const sidebarMenu = document.querySelector('.sidebar__menu')
 
-  sidebar.addEventListener('mouseover', () => {
-    sidebarMenu.style.opacity = '0'
-    scroll.style.right = '10px'
-    sectionContainer.style.marginLeft = '140px'
-  })
-
-  sidebar.addEventListener('mouseout', () => {
-    scroll.style.right = '-20px'
-    sidebarMenu.style.opacity = '1'
-    sectionContainer.style.marginLeft = '60px'
-  })
-
+  const checkWindowWidth = () => {
+    if(window.innerWidth<1250){
+        sectionContainer.style.marginLeft = '60px'
+    sidebar.addEventListener('mouseover', () => {
+      sidebarMenu.style.opacity = '0'
+      scroll.style.right = '10px'
+      sectionContainer.style.marginLeft = '140px'
+    })
+  
+    sidebar.addEventListener('mouseout', () => {
+      scroll.style.right = '-20px'
+      sidebarMenu.style.opacity = '1'
+      sectionContainer.style.marginLeft = '60px'
+    })
+    }else{
+        sectionContainer.style.marginLeft = 'auto'
+        sidebar.addEventListener('mouseover', () => {
+            sidebarMenu.style.opacity = '0'
+            scroll.style.right = '10px'
+          })
+          sidebar.addEventListener('mouseout', () => {
+            scroll.style.right = '-20px'
+            sidebarMenu.style.opacity = '1'
+          })
+    };
+  }
+  checkWindowWidth();
+  window.addEventListener('resize', () => {
+    checkWindowWidth()
+  });
   const topOffset = element => {
     let positionOfElement = element.getBoundingClientRect()
     let positionOfTop = positionOfElement.top
