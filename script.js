@@ -48,13 +48,13 @@
   })
 
   const backgroundToggle = (element, firstColor, secondColor) => {
-    element.style.backgroundColor === firstColor
+    getComputedStyle(element).backgroundColor === firstColor
       ? (element.style.backgroundColor = secondColor)
       : (element.style.backgroundColor = firstColor)
   }
 
   const fontColorToggle = (element, firstColor, secondColor) => {
-    element.style.color === firstColor
+    getComputedStyle(element).color === firstColor
       ? (element.style.color = secondColor)
       : (element.style.color = firstColor)
   }
@@ -62,6 +62,10 @@
   const themeButton = document.querySelector('.header__button')
 
   themeButton.addEventListener('click', () => {
+    themeButton.innerText === 'Jasny motyw'
+      ? (themeButton.innerText = 'Ciemny motyw')
+      : (themeButton.innerText = 'Jasny motyw');
+
     const body = document.querySelector('.body')
     const header = document.querySelector('.header')
     const sidebarLinks = document.querySelectorAll('.sidebar__listLink')
@@ -70,11 +74,8 @@
     backgroundToggle(header, 'rgb(13, 0, 43)', 'rgb(255, 255, 255)')
     fontColorToggle(body, 'rgb(255, 255, 255)', 'rgb(0, 0, 0')
 
-    themeButton.innerText === 'Jasny motyw'
-      ? (themeButton.innerText = 'Ciemny motyw')
-      : (themeButton.innerText = 'Jasny motyw')
 
-    themeButton.style.right === '0px'
+    getComputedStyle(themeButton).right === '0px'
       ? (themeButton.style.right = 'unset')
       : (themeButton.style.right = '0px')
 
