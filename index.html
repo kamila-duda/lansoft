@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LanSoft</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+<!--    <link
+     href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
-    />
+    />-->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
@@ -17,6 +17,28 @@
     <header class="header">
       <h1 class="header__title">Lan Soft</h1>
       <span class="header__button--track"><button class="header__button">Jasny motyw</button></span>
+      <div class="mobileMenu__button">
+          <div class="mobileMenu__burger"></div>
+      </div>
+      <nav class="mobileMenu">
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__listItem">
+              <a class="mobileMenu__listLink" href="#home">Home</a>
+            </li>
+            <li class="mobileMenu__listItem">
+              <a class="mobileMenu__listLink" href="#aboutUs">O nas</a>
+            </li>
+            <li class="mobileMenu__listItem">
+              <a class="mobileMenu__listLink" href="#realization">Realizacje</a>
+            </li>
+            <li class="mobileMenu__listItem">
+              <a class="mobileMenu__listLink" href="#offer">Oferta</a>
+            </li>
+            <li class="mobileMenu__listItem">
+              <a class="mobileMenu__listLink" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+      </nav>
     </header>
     <main class="container">
       <nav class="sidebar">
@@ -28,7 +50,7 @@
             <a class="sidebar__listLink" href="#aboutUs">O nas</a>
           </li>
           <li class="sidebar__listItem">
-            <a class="sidebar__listLink" href="#contact">Realizacje</a>
+            <a class="sidebar__listLink" href="#realization">Realizacje</a>
           </li>
           <li class="sidebar__listItem">
             <a class="sidebar__listLink" href="#offer">Oferta</a>

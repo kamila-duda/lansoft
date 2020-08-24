@@ -1,39 +1,15 @@
 {
-  const scroll = document.querySelector('.sidebar__scroll')
-  const sidebar = document.querySelector('.sidebar')
-  const sectionContainer = document.querySelector('.section__container')
-  const sidebarMenu = document.querySelector('.sidebar__menu')
+const menuMobileButton = document.querySelector(".mobileMenu__button");
+const menuMobile = document.querySelector(".mobileMenu");
+menuMobileButton.addEventListener("click", () => {
+    menuMobileButton.classList.toggle("mobileMenu__button--open") 
+    menuMobile.classList.toggle("mobileMenu--open")
+})
+menuMobile.addEventListener("click", () => {
+    menuMobile.classList.toggle("mobileMenu--open")
+    menuMobileButton.classList.toggle("mobileMenu__button--open")
+})
 
-  const checkWindowWidth = () => {
-    if(window.innerWidth<1250){
-        sectionContainer.style.marginLeft = '60px'
-    sidebar.addEventListener('mouseover', () => {
-      sidebarMenu.style.opacity = '0'
-      scroll.style.right = '10px'
-      sectionContainer.style.marginLeft = '140px'
-    })
-  
-    sidebar.addEventListener('mouseout', () => {
-      scroll.style.right = '-20px'
-      sidebarMenu.style.opacity = '1'
-      sectionContainer.style.marginLeft = '60px'
-    })
-    }else{
-        sectionContainer.style.marginLeft = 'auto'
-        sidebar.addEventListener('mouseover', () => {
-            sidebarMenu.style.opacity = '0'
-            scroll.style.right = '10px'
-          })
-          sidebar.addEventListener('mouseout', () => {
-            scroll.style.right = '-20px'
-            sidebarMenu.style.opacity = '1'
-          })
-    };
-  }
-  checkWindowWidth();
-  window.addEventListener('resize', () => {
-    checkWindowWidth()
-  });
   const topOffset = element => {
     let positionOfElement = element.getBoundingClientRect()
     let positionOfTop = positionOfElement.top
@@ -58,11 +34,6 @@
     topOffset(aboutUsImages) < 370
       ? (aboutUsImages.style.opacity = '1')
       : (aboutUsImages.style.opacity = '0')
-
-    const footer = document.querySelector('.footer')
-    topOffset(footer) < 530
-      ? (sidebar.style.display = 'none')
-      : (sidebar.style.display = 'unset')
   })
 
   const backgroundToggle = (element, firstColor, secondColor) => {
@@ -82,7 +53,7 @@
   themeButton.addEventListener('click', () => {
     themeButton.innerText === 'Jasny motyw'
       ? (themeButton.innerText = 'Ciemny motyw')
-      : (themeButton.innerText = 'Jasny motyw');
+      : (themeButton.innerText = 'Jasny motyw')
 
     const body = document.querySelector('.body')
     const header = document.querySelector('.header')
@@ -92,9 +63,8 @@
     backgroundToggle(header, 'rgb(13, 0, 43)', 'rgb(255, 255, 255)')
     fontColorToggle(body, 'rgb(255, 255, 255)', 'rgb(0, 0, 0')
 
-
     getComputedStyle(themeButton).right === '0px'
-      ? (themeButton.style.right = 'unset')
+      ? (themeButton.style.right = '30%')
       : (themeButton.style.right = '0px')
 
     sidebarLinks.forEach(function (sidebarLink) {
