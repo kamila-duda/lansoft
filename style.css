@@ -19,6 +19,11 @@ html {
   margin: 0;
 }
 
+.body--lightTheme {
+  background-color: white;
+  color: #0d002b;
+}
+
 .header {
   position: fixed;
   z-index: 100;
@@ -36,6 +41,10 @@ html {
       -ms-flex-align: center;
           align-items: center;
   top: 0;
+}
+
+.header--lightTheme {
+  background-color: white;
 }
 
 .header__title {
@@ -72,6 +81,10 @@ html {
   position: absolute;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.header__button--lightTheme {
+  right: 30%;
 }
 
 .mobileMenu__button {
@@ -243,6 +256,10 @@ html {
 .sidebar__listLink {
   color: white;
   text-decoration: none;
+}
+
+.sidebar__listLink--lightTheme {
+  color: #0d002b;
 }
 
 .sidebar__menu {
