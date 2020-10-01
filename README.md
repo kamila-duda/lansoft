@@ -1,5 +1,7 @@
 # Lansoft website
 
+<a href="https://kamila-duda.github.io/lansoft/" target="_blank">`Demo: https://kamila-duda.github.io/lansoft/`</a>
+
 ## Table of contents
 
 - [General info](#general-info)
